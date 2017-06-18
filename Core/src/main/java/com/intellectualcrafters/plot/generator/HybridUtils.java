@@ -263,9 +263,6 @@ public abstract class HybridUtils {
                                                 regenerateRoad(area, chunk, extend);
                                             }
                                         });
-                                        // DELAY TASK
-                                        TaskManager.runTaskLater(task, 600);
-                                        return;
                                     }
                                     if (System.currentTimeMillis() - baseTime - last.get() < 1500 && last.get() != 0) {
                                         while (System.currentTimeMillis() < diff && !chunks.isEmpty()) {
